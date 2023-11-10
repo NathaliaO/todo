@@ -2,7 +2,7 @@
     <nav class="navbar bg-body-tertiary">
         <div class="container-fluid">
             <h3>TO DO LIST</h3>
-            <a class="navbar-brand text-end" href="/login">Login</a>
+            <a class="navbar-brand text-end" href="/login" >Login</a>
         </div>
     </nav>
     <div class="todoListContainer">
@@ -42,6 +42,9 @@ export default {
             .catch(error => {
                 console.log(error)
             })
+        },
+        openModal() {
+            this.$router.push('login')
         }
     },
     create() {
@@ -56,11 +59,6 @@ export default {
     width: 350px;
     margin:auto;
 }
-
-/* .heading {
-    background: white;
-    padding: 10px;
-} */
 
 #title {
     text-align: center;
